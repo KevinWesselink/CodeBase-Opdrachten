@@ -18,5 +18,4 @@ if ( $knikkers >= 1 && $knikkers <= 20 ) {
 } else {
     exit("Je invoer lag niet tussen de 1 en 20, het programma wordt nu afgesloten.");
 }
-
 ?>
