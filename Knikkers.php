@@ -1,12 +1,22 @@
 <?php
 
-$getal = readline("Geef een getal. (Maximaal 20)");
+$teller = 1;
+$knikkers = readline("Kies een getal tussen de 1 en 20.\n");
 
-//For loopje nodig, om te blijven loopen, indien getal niet binnen 1 en 20 valt.
-if ($getal >= 1 && $getal <= 20) {
-    //Code
+if ( $knikkers >= 1 && $knikkers <= 20 ) {
+    while ($knikkers != 0) {
+        if ($teller == 1) {
+            $knikkers--;
+            echo $teller . " knikker opgegooid, nog " . $knikkers . " in mijn zak.\n";
+            $teller++;
+        } else {
+            $knikkers--;
+            echo $teller . " knikkers opgegooid, nog " . $knikkers . " in mijn zak.\n";
+            $teller++;
+        }
+    }
 } else {
-    $getal = readline("Probeer het opnieuw.");
+    exit("Je invoer lag niet tussen de 1 en 20, het programma wordt nu afgesloten.");
 }
 
 ?>
