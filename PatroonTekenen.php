@@ -1,13 +1,14 @@
 <?php
 
 $ster = "* ";
-$teller = 0;
+$teller = 1;
 
-while ($teller < 5) {
-    for ($i = 0; $i != 5; $i++) {
+while ($teller < 6) {
+    for ($i = 0; $i != $teller ; $i++) {
         echo $ster;
     }
     $teller++;
+    echo "\n";
 }
 
 ?>
