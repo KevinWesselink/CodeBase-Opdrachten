@@ -16,12 +16,16 @@ if (is_numeric($waardeVoor) && $grootheidVoor != $gewensteGrootheid) {
         $indexVoor = array_search($grootheidVoor, $grootheden);
         $indexNa = array_search($gewensteGrootheid, $grootheden);
         $verschil = $indexVoor - $indexNa;
-        echo $verschil;
-        //$waardeNa =
+
+        if ($verschil > 0) {
+            $waardeNa = $waardeVoor * pow(10, $verschil);
+        } else {
+            $waardeNa = $waardeVoor / pow(10, -$verschil);
+        }
 
         echo "\n";
         echo "Welke waarde: " . $waardeVoor . "\n";
-        echo "Welke grootheid" . $grootheidVoor . "\n";
+        echo "Welke grootheid: " . $grootheidVoor . "\n";
         echo "Welke gewenste grootheid: " . $gewensteGrootheid . "\n";
         echo $waardeVoor . " " . $grootheidVoor . " = " . $waardeNa . " " . $gewensteGrootheid . "\n";
     } else {
