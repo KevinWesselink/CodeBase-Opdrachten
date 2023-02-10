@@ -17,10 +17,10 @@ if (is_numeric($waardeVoor) && $grootheidVoor != $gewensteGrootheid) {
         $indexNa = array_search($gewensteGrootheid, $grootheden);
         $verschil = $indexVoor - $indexNa;
 
-        if ($verschil > 0) {
-            $waardeNa = $waardeVoor * pow(10, $verschil);
+        if ($verschil < 0) {
+            $waardeNa = $waardeVoor * pow(10, -$verschil);
         } else {
-            $waardeNa = $waardeVoor / pow(10, -$verschil);
+            $waardeNa = $waardeVoor / pow(10, $verschil);
         }
 
         echo "\n";
