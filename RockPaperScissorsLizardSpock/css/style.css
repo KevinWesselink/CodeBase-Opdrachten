@@ -1,0 +1,37 @@
+/*CSS van Steen, papier, schaar begint hier! */
+
+.player {
+    height: 100%;
+    width: 40%;
+    border: 1px solid #e9e9e9;
+    background-color: #666;
+    color: white;
+    padding-left: 10px;
+    float: left;
+    text-align: left;
+}
+
+.computer {
+    height: 100%;
+    width: 40%;
+    border: 1px solid #e9e9e9;
+    background-color: #666;
+    color: white;
+    padding-right: 10px;
+    float: right;
+    text-align: right;
+}
+
+.choiceCards {
+    width: 100px;
+    height: 100px;
+    background-color: #0099ff;
+    margin: 10px;
+    border: 1px solid #999999;
+}
+
+.winContainer {
+    justify-content: space-around;
+    background-color: #666;
+    color: white;
+}
