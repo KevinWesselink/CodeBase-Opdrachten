@@ -11,7 +11,7 @@ $verpakteFrikandellen = 25;
 $f = 0;
 $budget = 100;
 
-//Worsten: (budget - kostenHamburger - kostenFrikandellen) / kostenWorst = 8;
+//Worsten: (budget - kostenHamburger - kostenFrikandellen) / kostenWorst = 15;
 //Hamburgers: (budget - kostenWorst - kostenFrikandellen) / kostenHamburger = 8;
 //Frikandellen: (budget - kostenWorst - kostenHamburger) / kostenFrikandellen = 6;
 
@@ -19,7 +19,7 @@ for ($w = 0; $w <= 15; $w++) {
     berekenOpties($w, $h, $f, $kostenWorst, $kostenHamburger, $kostenFrikandellen, $budget, $verpakteWorsten, $verpakteHamburgers, $verpakteFrikandellen);
     for ($h = 0; $h <= 8; $h++) {
         berekenOpties($w, $h, $f, $kostenWorst, $kostenHamburger, $kostenFrikandellen, $budget, $verpakteWorsten, $verpakteHamburgers, $verpakteFrikandellen);
-        for ($f = 0; $f <= 9; $f++) {
+        for ($f = 0; $f <= 5; $f++) {
             berekenOpties($w, $h,$f, $kostenWorst, $kostenHamburger, $kostenFrikandellen, $budget, $verpakteWorsten, $verpakteHamburgers, $verpakteFrikandellen);
         }
     }
