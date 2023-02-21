@@ -16,12 +16,18 @@ $budget = 100;
 //Frikandellen: (budget - kostenWorst - kostenHamburger) / kostenFrikandellen = 6;
 
 for ($w = 0; $w <= 8; $w++) {
-    //echo
+    berekenOpties($w, $h, $f);
     for ($h = 0; $h <= 8; $h++) {
-        //echo
+        berekenOpties($w, $h, $f);
         for ($f = 0; $f <= 6; $f++) {
-            //echo
+            berekenOpties($w, $h, $f);
         }
+    }
+}
+
+function berekenOpties($w, $h, $f, $kostenWorst, $kostenHamburger, $kostenFrikandellen, $budget) {
+    if (($w * $kostenWorst) + ($h * $kostenHamburger) + ($f * $kostenFrikandellen) == $budget) {
+        //
     }
 }
 
