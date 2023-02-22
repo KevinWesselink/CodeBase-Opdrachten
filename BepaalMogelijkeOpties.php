@@ -26,10 +26,10 @@ for ($w = 0; $w <= 15; $w++) {
 }
 
 function berekenOpties($aantalWorsten, $aantalHamburgers, $aantalFrikandellen, $kostenWorst, $kostenHamburger, $kostenFrikandellen, $budget, $verpakteWorsten, $verpakteHamburgers, $verpakteFrikandellen) {
-    if (($aantalWorsten * $kostenWorst) + ($aantalHamburgers * $kostenHamburger) + ($aantalFrikandellen * $kostenFrikandellen) == $budget) {
-        $aantalWorsten++;
-        $aantalHamburgers++;
-        $aantalFrikandellen++;
+    $aantalWorsten++;
+    $aantalHamburgers++;
+    $aantalFrikandellen++;
+    if ( ($aantalWorsten * $kostenWorst) + ($aantalHamburgers * $kostenHamburger) + ($aantalFrikandellen * $kostenFrikandellen) == $budget) {
         echo $aantalWorsten * $kostenWorst . " + " . $aantalHamburgers * $kostenHamburger . " + " . $aantalFrikandellen * $kostenFrikandellen . " = " . $budget . "\n";
         echo "Opties: " . $aantalWorsten * $verpakteWorsten . " worsten, " . $aantalHamburgers * $verpakteHamburgers . " hamburgers, " . $aantalFrikandellen * $verpakteFrikandellen . " frikandellen\n";
     }
