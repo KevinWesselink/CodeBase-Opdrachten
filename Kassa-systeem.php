@@ -22,6 +22,8 @@ while ($invoer > 0) {
     }
 }
 
-print_r(array_sum($bedrag))
+print_r(array_sum($bedrag));
+echo "\n";
+echo "Totaal te betalen bedrag: " . print_r(array_sum($bedrag));
 
 ?>
